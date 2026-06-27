@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace SolidPriciples.SRP
 {
-    public class OrderServiceWithSRP
+    public class OrderServiceGoodExample
     {
         private readonly ICommunication _communication;
-        public OrderServiceWithSRP(ICommunication communication) 
+        public OrderServiceGoodExample(ICommunication communication) 
         {
           _communication = communication;
         }

@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 
 namespace SolidPriciples.SRP
 {
-    public class OrderServiceWithoutSRP
+    public class OrderServiceBadExample
     {
-        public OrderServiceWithoutSRP() { }
+        public OrderServiceBadExample() { }
         public async Task CreateOrder(dynamic orderRequest)
         {
             //Create order logic
