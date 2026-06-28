@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SolidPriciples.SRP
+namespace SolidPriciples.SRP.GoodExample
 {
-    public class OrderServiceGoodExample
+    public class OrderService
     {
         private readonly ICommunication _communication;
-        public OrderServiceGoodExample(ICommunication communication) 
+        public OrderService(ICommunication communication) 
         {
           _communication = communication;
         }

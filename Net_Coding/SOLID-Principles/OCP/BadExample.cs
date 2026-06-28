@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLID_Principles.OCP
+namespace SOLID_Principles.OCP.BadExample
 {
-    public class PaymentServiceBadExample
+    public class PaymentService
     {
         public void ProcessPayment(string paymentType, decimal amount)
         {
@@ -33,11 +33,11 @@ namespace SOLID_Principles.OCP
 
     }
 
-    public class ExecutePaymenServiceBadExample
+    public class ExecutePaymenService
     {
         public void Execute()
         {
-            PaymentServiceBadExample service = new PaymentServiceBadExample();
+            PaymentService service = new PaymentService();
             service.ProcessPayment("PayPal", 1500);
         }
     }

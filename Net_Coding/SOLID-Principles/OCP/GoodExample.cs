@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLID_Principles.OCP
+namespace SOLID_Principles.OCP.GoodExample
 {
     public interface IPayment
     {
@@ -24,7 +24,7 @@ namespace SOLID_Principles.OCP
             Console.WriteLine($"Paid ₹{amount} using PayPal.");
         }
     }
-    public class PaymentServiceGoodExample
+    public class PaymentService
     {
         public void ProcessPayment(IPayment payment, decimal amount)
         {
@@ -35,7 +35,7 @@ namespace SOLID_Principles.OCP
     {
         public void Execute()
         {
-            PaymentServiceGoodExample service = new PaymentServiceGoodExample();
+            PaymentService service = new PaymentService();
             IPayment payment = new PayPalPayment();
             service.ProcessPayment(payment, 1500);
         }

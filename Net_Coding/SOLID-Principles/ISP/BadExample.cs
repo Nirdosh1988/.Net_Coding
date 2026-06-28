@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLID_Principles.ISP
+namespace SOLID_Principles.ISP.BadExample
 {
     public interface IWorker
     {
@@ -12,7 +12,7 @@ namespace SOLID_Principles.ISP
         void Eat();
         void Sleep();
     }
-    public class RobotBadExample : IWorker
+    public class Robot : IWorker
     {
         public void Work()
         {

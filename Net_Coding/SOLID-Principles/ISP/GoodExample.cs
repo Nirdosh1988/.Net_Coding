@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLID_Principles.ISP
+namespace SOLID_Principles.ISP.GoodExaple
 {
     public interface IWork
     {
@@ -20,7 +20,7 @@ namespace SOLID_Principles.ISP
     {
         void Sleep();
     }
-    public class HumanGoodExample : IWork, IEat, ISleep
+    public class Human : IWork, IEat, ISleep
     {
         public void Work()
         {
@@ -38,7 +38,7 @@ namespace SOLID_Principles.ISP
         }
     }
 
-    public class RobotGoodExample : IWork
+    public class Robot : IWork
     {
         public void Work()
         {

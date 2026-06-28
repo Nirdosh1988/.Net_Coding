@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace SolidPriciples.SRP
+namespace SolidPriciples.SRP.BadExample
 {
-    public class OrderServiceBadExample
+    public class OrderService
     {
-        public OrderServiceBadExample() { }
+        public OrderService() { }
         public async Task CreateOrder(dynamic orderRequest)
         {
             //Create order logic
