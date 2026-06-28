@@ -199,34 +199,22 @@ Classes implement only the interfaces they need.
 ### ❌ Bad Example
 
 ```
-OrderService
+SmsService
 
 ↓
 
-SqlServerRepository
+NotificationEngine
 ```
-
-OrderService depends directly on SQL Server.
+The orchestrator (NotificationEngine) directly creates a concrete low-level instance (SmsService). Swapping to a WhatsApp api requires rewriting structural system internals.
 
 ### ✅ Good Example
 
 ```
-OrderService
+IMessageSender 
 
 ↓
 
-IOrderRepository
-
-↓
-
-SqlRepository
-MongoRepository
-PostgresRepository
-```
-
-Repositories can be swapped without changing business logic.
-
----
+SmsService  | WhatsAppService 
 
 # Why SOLID?
 
