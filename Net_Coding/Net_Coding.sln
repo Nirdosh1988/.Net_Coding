@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.37216.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SOLID-Principles", "SOLID-Principles", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SOLIDPrinciples", "SOLIDPrinciples", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID-Principles", "SOLID-Principles\SOLID-Principles.csproj", "{D1F033DF-DB92-5312-B3C5-D1B26A6BB4B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLIDPrinciples", "SOLID-Principles\SOLIDPrinciples.csproj", "{D1F033DF-DB92-5312-B3C5-D1B26A6BB4B9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns", "DesignPatterns", "{F9B00D4D-837E-409B-B09D-A82FB03E845E}"
 EndProject
